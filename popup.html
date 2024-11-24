@@ -1,0 +1,45 @@
+<!-- popup.html -->
+<!doctype html>
+<html>
+  <head>
+    <title>Lawyerly</title>
+  </head>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+<body style='width: 600px'> 
+  <div class='container has-text-centered'> 
+    <div class='is-mobile is-centered'> 
+        <div class="card"> 
+          <div class="card-content">
+            <p id='message' class='has-text-danger'> 
+            </p> 
+      <div id='output'>
+            <p class='is-success'> 
+              Gemini Nano can summarize your annotations. Select and Highlight text as 
+                <span class='tag is-warning' style='margin: 4px'>Facts</span>,
+                <span class='tag is-success'>Issues</span>,
+                <span class='tag is-info'>Ruling</span>,
+                <span class='tag is-link'>Principles</span>, then click the button below.
+            </p> 
+      </div>
+      <article>
+            <div id='output-facts' style='margin: 4px'>
+            </div>
+            <div id='output-issues' style='margin: 4px'>
+            </div>
+            <div id='output-ruling' style='margin: 4px'>
+            </div>
+            <div id='output-principles' style='margin: 4px'>
+            </div>
+      </article>
+      <br/>
+    <button id="summarizeArticle" class="button">Summarize Annotations</button>
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</body>
+  <script src="popup.js"></script>
+</html>

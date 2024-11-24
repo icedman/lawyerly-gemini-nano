@@ -1,0 +1,26 @@
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "Lawyery+ Gemini Nano",
+  "version": "1.0",
+  "description": "Lawyerly AI tools",
+  "action": {
+    "default_icon": {
+      // "16": "icon.png",
+      "48": "icon.png"
+      // "128": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [ "*://lawyerly.ph/*", "*://dev.lawyerly.ph/*", "*://dev.lawyerly.com/*" ]
+}
